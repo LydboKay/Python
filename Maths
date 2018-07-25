@@ -1,0 +1,23 @@
+""" Math operators include:
+
+    + (addition)
+    - (subtraction)
+    * (multiplication)
+    / (division - shows decimal places)
+    % (modulus - shows the remainder of your calculation)
+
+The last printed expression gets automatically assigned to a
+"_" variable that can be used in a subsequent calculation: """
+
+# tax = 12.5/100
+# price = 100.50
+# price * tax
+# price + _
+
+""" You can then use the round() function to round the last printed
+to a specific number of decimal places, and print it: """
+
+# 12.5 * 679.823
+# round(_, 2) #The 2 rounds the number to 2 decimal places
+
+""" p.s. "concatenation" is the act of joining strings :)
