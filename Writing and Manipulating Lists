@@ -1,0 +1,49 @@
+""" To write a list and then reference specific aspect: """
+
+nums = [0, 1, 2, 3, 4, 5] #initialises a list of six elements
+print(nums[1]) #this references the second element in the list above (element numbering starts at 0)
+    
+quarter = ["January", "February", "March"]
+print("First Month:", quarter[0])
+print("Second Month:", quarter[1])
+print("Third Month:", quarter[2])
+
+coords = [["1", "2", "3"],["4","5","6"]] #multi dimensional list of 2 elements, which both contain 3 elements
+print("Top left 0,0:", coords[0][0]) #0 = 1st bracket, 0 = 1st value in this bracket
+print("Bottom Right 0,0:", coords[1][2]) #1 = second set of values, 3rd value in this bracket
+print("First letter in second month:", quarter[1][0]) #1 = feb, 0 = first letter of feb
+
+""" List variables:
+
+    list.append(x) (Adds item x to the end of the list)
+    list.extend(x) (Adds all items in list x to the end of the list)
+    list.insert(i,x) (Inserts item x at index position i)
+    list.remove(x) (Removes first item x from the list)
+    list.pop(i) (Removes item at index position i and returns it)
+    list.index(x) (Returns the index position in the list of the first item x)
+    list.count(x) (Returns the number of times x appears in the list)
+    list.sort() (Sort all list items - for lists that contain both numerical and string values, the
+    sort() method returns the list elements sorted first numerically, then alphabetically, e.g. 1,2,3,A,B,C)
+    list.reverse() (Reverse all list items)
+
+Also, len(L) function returns the length of the list L as the total number of eelemnets it contains.
+MUCH LIKE THE INDEX() AND COUNT() METHODS, THE RETURNED VALUE IS NUMERIC, SO CAN'T BE DIRECTLY CONCATENATED
+TO A TEXT STRING FOR OUTPUT BECAUSE IT IS NOT A STRING
+-----> This can be solved by saying str(n) for concatenation, which returns the string version of the numeric value
+-----> Similarly str(L) function for concatenation (keep in mind the returned versions are copies of the original)"""
+
+basket = ["Apple", "Banana", "Cherry"]
+crate = ["Eggplant", "Fig", "Grape"]
+
+print("Basket List:", str(basket)) #basket list, without edit
+print("Basket Elements: " + str(len(basket))) #no. of basket elements
+basket.append("Date") #add Date to the basket list
+print("Appended: " + str(basket)) #printed new list with Date on it
+print("Last Item Removed: " + basket.pop()) #returns last value in the list and removed it
+print("Basket List: " + str(basket)) #prints first list
+basket.extend(crate) #adds crate list to basket list
+print("Basket List: " + str(basket)) #prints new jumbo list
+del basket[1] #delete that value (2nd on basket) from the list
+print("Item removed: " + str(basket)) #prints new basket list without Banana
+del basket[1:3] #deletes items 1 and 2 from the list (think of it as 1-3, excluding 3)
+print("Slice removed: " + str(basket))
