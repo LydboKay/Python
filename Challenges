@@ -1,0 +1,89 @@
+# Challenge 6
+
+DaysPerWeek = 7
+HoursPerDay = 24
+MinutesPerHour = 60
+
+print(DaysPerWeek * HoursPerDay * MinutesPerHour)
+
+# Challenge 7
+
+name = input("What is your name? ")
+print("Hello, " + str(name) + "!")
+age = input("How old are you? ")
+ageInAYear = int(age) + int(1)
+print("So, your next birthday you are " + str(ageInAYear))
+
+# Challenge 8
+
+a = 12
+b = 6
+c = a + b
+print(c)
+
+width = input("What is the width of the rectangle? ")
+height = input("What is the height of the rectangle? ")
+area = int(height) * int(width)
+print("The area of the rectangle is " + str(area))
+
+# Challenge 9
+
+yourName = "Lydia"
+print("This is " + yourName + "\'s first program")
+
+# Challenge 10
+
+hours = input("How long, on average, do you spend on a computer per day?")
+
+if hours <= "2":
+    print("That seems reasonable ")
+else:
+print("Get a life")
+
+# Challenge 11
+
+hours = input("How long, on average, do you spend on a computer per day? ")
+
+if hours <= "2":
+    print("That seems reasonable.")
+elif hours <= "4":
+    print("Do you have time for anything else?")
+else:
+    print("You need to get some fresh air.")
+
+# Challenge 12
+
+question = input("What's your question? ")
+print("Let me think about that. ")
+#How do I make it wait
+print("I don't want to answer that question right now. ")
+question = input(question + " ")
+print("lol")
+
+# Challenge 13
+
+import random
+print(random.randint(0,100))
+
+print(random.randint(0,100))
+
+#Idrk how to do time
+
+# Challenge 14
+
+for i in range(0,5):
+    print("looping")
+# Time?
+
+#Challenge 15
+
+count = 0
+while(count < 9):
+    print("The count is:" + str(count))
+count = count + 1
+print("Goodbye!")
+
+password = "Changeme"
+user = input("Please type password ")
+if user == password:
+    print("Accepted")
